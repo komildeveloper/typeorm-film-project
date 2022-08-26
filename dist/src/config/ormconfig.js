@@ -11,7 +11,7 @@ exports.dataSource = new typeorm_1.DataSource({
     host: process.env.TYPEORM_HOST,
     port: 5432,
     password: process.env.TYPEORM_PASSWORD,
-    database: process.env.TYPEORM_DATABASE,
+    database: 'postgres',
     username: process.env.TYPEORM_USERNAME,
     synchronize: true,
     entities: [path_1.default.join(__dirname, '..', 'entities', '*.entity.{ts,js}')],
